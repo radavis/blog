@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Author do
-  it { should have_valid(:name).when('Jim', 'John', 'Sam') }
+  it { should have_valid(:name).when('Scotty', 'Bones', 'Uhura', 'Spock') }
   it { should_not have_valid(:name).when(nil, '') }
 
   it { should have_valid(:email).when('a@b.com', 'someone@gmail.com') }
